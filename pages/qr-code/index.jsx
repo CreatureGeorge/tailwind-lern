@@ -4,7 +4,7 @@ export default function QRCode() {
   return (
     <html>
       <Head>
-        <link type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
         <title>Frontend Mentor | QR code component</title>
       </Head>
       <body class="bg-lightgray w-screen h-screen">
@@ -18,7 +18,7 @@ export default function QRCode() {
           </div>
         </div>
         <div class="attribution p-2">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
           Coded by <a href="#" class=''>Goerge Mueller</a>.
         </div>
       </body>
