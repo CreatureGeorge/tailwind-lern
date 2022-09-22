@@ -1,14 +1,10 @@
 import Head from "next/head";
 
 export default function QRCode() {
-
   return (
     <html>
       <Head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
+        <link type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
         <title>Frontend Mentor | QR code component</title>
       </Head>
       <body class="bg-lightgray w-screen h-screen">
