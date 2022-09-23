@@ -36,10 +36,10 @@ export default function ThreeColumn() {
           {
             cardInfo.map(card => {
               return (
-              <div key={card.title} class={`first:rounded-t-lg last:rounded-b-lg w-[300px] md:basis-2/6 md:first:rounded-l-lg md:last:rounded-r-lg md:first:rounded-none md:last:rounded-none ${card.bgcolor} p-10`}>
-                <img src={card.image}/>
+              <div key={card.title} class={`first:rounded-t-lg last:rounded-b-lg w-[300px] md:basis-2/6 md:first:rounded-l-lg md:last:rounded-r-lg md:first:rounded-none md:last:rounded-none ${card.bgcolor} px-11 py-14`}>
+                <img alt={card.description} src={card.image}/>
                 <div class="mb-20">
-                  <div class="font-big-shoulders uppercase text-verylightgray text-[36px] my-6">{card.title}</div>
+                  <div class="font-big-shoulders uppercase text-verylightgray text-[36px] my-7">{card.title}</div>
                   <div class="font-lexend-deca text-transparentwhite text-[15px] ">{card.description}</div>
                 </div>
                 <button class={`font-lexend-deca ${card.textcolor} bg-white rounded-full border-white border-2 hover:bg-transparent hover:text-transparentwhite hover:border-transparentwhite px-4 py-2`}>Learn More</button>
