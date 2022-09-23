@@ -31,12 +31,12 @@ export default function ThreeColumn() {
         <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
         <title>Frontend Mentor | 3 Column</title>
       </Head>
-      <main class="flex w-screen h-screen">
+      <main class="flex w-screen h-screen py-10">
         <div class="flex flex-col md:flex-row m-auto">
           {
             cardInfo.map(card => {
               return (
-              <div key={card.title} class={`first:rounded-t last:rounded-b w-[300px] md:basis-2/6 md:first:rounded-l md:last:rounded-r md:first:rounded-none md:last:rounded-none ${card.bgcolor} p-10`}>
+              <div key={card.title} class={`first:rounded-t-lg last:rounded-b-lg w-[300px] md:basis-2/6 md:first:rounded-l-lg md:last:rounded-r-lg md:first:rounded-none md:last:rounded-none ${card.bgcolor} p-10`}>
                 <img src={card.image}/>
                 <div class="mb-20">
                   <div class="font-big-shoulders uppercase text-verylightgray text-[36px] my-6">{card.title}</div>
