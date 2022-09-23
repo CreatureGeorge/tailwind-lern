@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -17,6 +16,9 @@ export default function Home() {
             <div class="flex flex-col underline text-blue-600 hover:text-blue-800 mt-5 text-sm">
               <Link href="/qr-code">
                 qr-code
+              </Link>
+              <Link href="/3-column">
+                3-columns
               </Link>
             </div>
           </div>
