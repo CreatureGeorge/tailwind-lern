@@ -42,7 +42,7 @@ export default function ThreeColumn() {
                   <div class="font-big-shoulders uppercase text-verylightgray text-[36px] my-7">{card.title}</div>
                   <div class="font-lexend-deca text-transparentwhite text-[15px] ">{card.description}</div>
                 </div>
-                <button class={`font-lexend-deca ${card.textcolor} bg-white rounded-full border-white border-2 hover:bg-transparent hover:text-transparentwhite hover:border-transparentwhite px-4 py-2`}>Learn More</button>
+                <button class={`font-lexend-deca ${card.textcolor} bg-white rounded-full border-white border-2 md:hover:bg-transparent md:hover:text-transparentwhite hover:border-transparentwhite px-4 py-2`}>Learn More</button>
               </div>
               )
             })
