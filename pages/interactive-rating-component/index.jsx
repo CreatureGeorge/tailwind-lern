@@ -43,7 +43,7 @@ export default function InteractiveRatingComponent() {
                 <div class="flex flex-row justify-between mb-6">
                   {
                     ratings.map(rating => {
-                      return <InteractiveSelectItem id={rating.id} text={rating.id} activeSelection={activeSelection} setActiveSelection={setActiveSelection} />
+                      return <InteractiveSelectItem key={rating.id} id={rating.id} text={rating.id} activeSelection={activeSelection} setActiveSelection={setActiveSelection} />
                     })
                   }
                 </div>
@@ -80,18 +80,18 @@ function InteractiveSelectItem({ id, text, activeSelection, setActiveSelection }
   }
 
   return (
-    <div key={id}>
+    <>
       {
         activeSelection !== id ? (
-          <button key={id} onClick={() => handleSelection()} class="p-2 h-[50px] w-[50px] text-med-gray rounded-full bg-soft-dark-blue hover:bg-med-gray hover:text-white transition-colors duration-500">
+          <button onClick={() => handleSelection()} class="p-2 h-[50px] w-[50px] text-med-gray rounded-full bg-soft-dark-blue hover:bg-med-gray hover:text-white transition-colors duration-500">
             {text}
           </button>
         ) : (
-          <button key={id} onClick={() => handleSelection()} class="p-2 h-[50px] w-[50px] text-white rounded-full bg-orange hover:bg-soft-orange">
+          <button onClick={() => handleSelection()} class="p-2 h-[50px] w-[50px] text-white rounded-full bg-orange hover:bg-soft-orange">
             {text}
           </button>
         )
       }
-    </div>
+    </>
   )
 }
