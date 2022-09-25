@@ -38,7 +38,7 @@ export default function FAQAccordian() {
   return (
     <div class="grid w-full min-h-screen place-items-center bg-gradient-to-b from-[#af67e9] to-[#6565e7]">
       <PageHead title="FM | FAQ Accordian" />
-      <section class="grid lg:grid-cols-2 bg-white rounded-[2.3rem] w-[90%] z-0">
+      <section class="grid lg:grid-cols-2 bg-white rounded-[2.3rem] w-[90%] z-0 max-w-[60rem]">
         <section class="grid ">
           <div class="grid">
             <div class="grid place-items-center m lg:align-middle col-start-1 col-end-2 row-start-1 row-end-2">
