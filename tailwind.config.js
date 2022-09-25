@@ -20,18 +20,32 @@ module.exports = {
         "soft-violet": "hsl(273, 75%, 66%)",
       
         "soft-red": "hsl(14, 88%, 65%)",
+        "orange": "hsl(25, 97%, 53%)",
+        "soft-orange": "hsl(25, 97%, 65%)",
 
-        "very-dark-desat-blue": "hsl(238, 29%, 16%)",
+        "light-gray-blue": "hsl(240, 5%, 91%)",
+        "dark-gray-blue": "hsl(240, 6%, 50%)",  
         "very-dark-gray-blue": "hsl(237, 12%, 33%)",
-        "dark-gray-blue": "hsl(240, 6%, 50%)",
+        "very-dark-desat-blue": "hsl(238, 29%, 16%)",
+
+
         "soft-blue": "hsl(240, 73%, 65%)",
-        "light-gray-blue": "hsl(240, 5%, 91%)"
+
+        "soft-dark-blue": "hsl(213, 20%, 22%)",
+        "dark-blue": "hsl(213, 19%, 18%)",
+        "very-dark-blue": "hsl(216, 12%, 8%)",
+
+        "light-gray": "hsl(217, 12%, 63%)",
+        "med-gray": "hsl(216, 12%, 54%)",
+
+
       },
       fontFamily: {
         'outfit': ['Outfit', 'sans-serif'],
         'lexend-deca': ['Lexend Deca', 'sans-serif'],
         'big-shoulders': ['Big Shoulders Display', 'sans-serif'],
-        'kumbh-sans': ['Kumbh Sans', 'sans-serif']
+        'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
+        'overpass': ['Overpass']
       }
     },
   },

@@ -86,15 +86,13 @@ function AccordianItem( {currentFaq, setCurrentFaq, index, summary, description}
   }
   return (
     <li class="border-b-[1px] pb-[1rem] mb-[1rem] text-dark-gray-blue">
-      <section onClick={handleClick} class="flex justify-between items-center hover:text-soft-red cursor-pointer mb-2">
+      <section onClick={() => handleClick()} class="flex justify-between items-center hover:text-soft-red cursor-pointer mb-2">
         {
           currentFaq !== index ? (<p class="">{summary}</p>) : (<p class="font-bold text-very-dark-gray-blue hover:text-soft-red">{summary}</p>)
         }
         {
           currentFaq !== index ? (<img src="/images/faq-accordian/icon-arrow-down.svg" alt="arrow" />) : (<img class="rotate-180" src="/images/faq-accordian/icon-arrow-down.svg" alt="arrow" />)
-        }
-        
-        
+        }           
       </section>
       {descriptionDisplay()}
     </li>

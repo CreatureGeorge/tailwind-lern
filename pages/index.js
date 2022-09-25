@@ -20,6 +20,9 @@ export default function Home() {
               <Link href="/faq-accordian">
                 faq-accordian
               </Link>
+              <Link href="/interactive-rating-component">
+                interactive-rating-component
+              </Link>
             </div>
           </div>
         </main>
