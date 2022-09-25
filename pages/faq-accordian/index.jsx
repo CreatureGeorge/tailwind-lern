@@ -59,7 +59,7 @@ export default function FAQAccordian() {
           <ul>
             {
               faq.map(item => {
-                return <AccordianItem currentFaq={currentFaq} setCurrentFaq={setCurrentFaq} index={item.index} summary={item.summary} description={item.description}/>
+                return <AccordianItem key={item.index} currentFaq={currentFaq} setCurrentFaq={setCurrentFaq} index={item.index} summary={item.summary} description={item.description}/>
               })
             }
           </ul>
