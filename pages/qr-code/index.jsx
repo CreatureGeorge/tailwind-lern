@@ -15,10 +15,6 @@ export default function QRCode() {
             </div>
           </div>
         </div>
-        <div class="attribution p-2">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-          Coded by <a href="#" class=''>Goerge Mueller</a>.
-        </div>
       </main>
     </div>
 )

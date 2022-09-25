@@ -29,7 +29,7 @@ export default function ThreeColumn() {
     <div>
       <PageHead title={'FM | 3 Column'} />
       <main class="flex w-screen h-screen py-10">
-        <div class="flex flex-col md:flex-row m-auto align-middle h-screen">
+        <div class="flex flex-col md:flex-row m-auto align-middle">
           {
             cardInfo.map(card => {
               return (
