@@ -1,4 +1,4 @@
-import Head from "next/head"
+import PageHead from "../../components/layout/PageHead"
 
 export default function ThreeColumn() {
   const cardInfo = [
@@ -27,12 +27,9 @@ export default function ThreeColumn() {
 
   return (
     <div>
-      <Head>
-        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
-        <title>Frontend Mentor | 3 Column</title>
-      </Head>
+      <PageHead title={'FM | 3 Column'} />
       <main class="flex w-screen h-screen py-10">
-        <div class="flex flex-col md:flex-row m-auto">
+        <div class="flex flex-col md:flex-row m-auto align-middle h-screen">
           {
             cardInfo.map(card => {
               return (

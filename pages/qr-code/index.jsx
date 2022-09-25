@@ -1,12 +1,10 @@
 import Head from "next/head";
+import PageHead from "../../components/layout/PageHead";
 
 export default function QRCode() {
   return (
     <div>
-      <Head>
-        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
-        <title>Frontend Mentor | QR code component</title>
-      </Head>
+      <PageHead title="FM | QR code component"/>
       <main class="bg-lightgray w-screen h-screen">
         <div class="flex h-screen">
           <div class="bg-white flex flex-col m-auto p-4 rounded-2xl w-[320px]">

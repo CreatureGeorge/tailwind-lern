@@ -16,11 +16,22 @@ module.exports = {
         darkcyan: "#006970",
         verydarkcyan: "#004241",
         verylightgray: "#f2f2f2",
+
+        "soft-violet": "hsl(273, 75%, 66%)",
+      
+        "soft-red": "hsl(14, 88%, 65%)",
+
+        "very-dark-desat-blue": "hsl(238, 29%, 16%)",
+        "very-dark-gray-blue": "hsl(237, 12%, 33%)",
+        "dark-gray-blue": "hsl(240, 6%, 50%)",
+        "soft-blue": "hsl(240, 73%, 65%)",
+        "light-gray-blue": "hsl(240, 5%, 91%)"
       },
       fontFamily: {
         'outfit': ['Outfit', 'sans-serif'],
         'lexend-deca': ['Lexend Deca', 'sans-serif'],
-        'big-shoulders': ['Big Shoulders Display', 'sans-serif']
+        'big-shoulders': ['Big Shoulders Display', 'sans-serif'],
+        'kumbh-sans': ['Kumbh Sans', 'sans-serif']
       }
     },
   },

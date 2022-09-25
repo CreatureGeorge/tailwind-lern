@@ -1,14 +1,11 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import PageHead from '../components/layout/PageHead'
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/qr-code/favicon-32x32.png" />
-        <title>Frontend Mentor | Tailwind Home</title>
-      </Head>
+      <PageHead title={'FM | Tailwind Home'}/>
       <div class="w-screen h-screen">
         <main class="flex h-screen">
           <div class="flex flex-col m-auto text-center">
@@ -19,6 +16,9 @@ export default function Home() {
               </Link>
               <Link href="/3-column">
                 3-columns
+              </Link>
+              <Link href="/faq-accordian">
+                faq-accordian
               </Link>
             </div>
           </div>
