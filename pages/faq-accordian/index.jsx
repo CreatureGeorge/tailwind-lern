@@ -52,7 +52,7 @@ export default function FAQAccordian() {
               <img class="hidden lg:block top-1/2 translate-x-[-35rem] translate-y-[-32%] z-0" src="/images/faq-accordian/bg-pattern-desktop.svg" alt="box shadow" />
             </div>  
           </div>
-          <img class="hidden lg:block translate-x-[-5.5rem] translate-y-[-9.5rem] z-20" src="/images/faq-accordian/illustration-box-desktop.svg" atl="box" />
+          <img class="hidden lg:block translate-x-[-5.5rem] translate-y-[-9.5rem] z-20" src="/images/faq-accordian/illustration-box-desktop.svg" alt="box" />
         </section>
         <section class="flex flex-col gap-[2.8rem] px-4 pb-4 w-full z-10 m-auto font-kumbh-sans lg:w-[100%]">
           <h2 class="font-bold text-[2.2rem] text-center lg:text-left">FAQ</h2>
