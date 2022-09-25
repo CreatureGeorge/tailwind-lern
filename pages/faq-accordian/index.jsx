@@ -80,15 +80,15 @@ function AccordianItem( {currentFaq, setCurrentFaq, index, summary, description}
   function descriptionDisplay() {
     if (currentFaq == index) {
       return (
-        <p >{description}</p> 
+        <p class="text-[15px]">{description}</p> 
       )
     } 
   }
   return (
-    <li class="border-b-[1px] pb-[1rem] mb-[1rem]">
+    <li class="border-b-[1px] pb-[1rem] mb-[1rem] text-dark-gray-blue">
       <section onClick={handleClick} class="flex justify-between items-center hover:text-soft-red cursor-pointer mb-2">
         {
-          currentFaq !== index ? (<p class="">{summary}</p>) : (<p class="font-bold">{summary}</p>)
+          currentFaq !== index ? (<p class="">{summary}</p>) : (<p class="font-bold text-very-dark-gray-blue">{summary}</p>)
         }
         {
           currentFaq !== index ? (<img src="/images/faq-accordian/icon-arrow-down.svg" alt="arrow" />) : (<img class="rotate-180" src="/images/faq-accordian/icon-arrow-down.svg" alt="arrow" />)
