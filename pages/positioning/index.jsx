@@ -2,27 +2,83 @@ import PageHead from "../../components/layout/PageHead";
 
 export default function Positioning() {
   return (
-    <div>
-      <PageHead title="Lern Position" />
-      <main class="grid w-full min-h-screen place-items-center align-middle">
-        <section class="grid grid-cols-2 grid-rows-2 m-auto text-center">
-          <div class="border-4 border-indigo-400 col-start-1 col-end-2 row-start-1 row-end-2">1</div>
-          <div class="grid justify-center border-4 border-indigo-500 col-start-1 col-end-2 row-start-1 row-end-2">
-            <div class="col-start-1 col-end-2 row-start-1 row-end-2" >2</div>
-            <div class="col-start-1 col-end-2 row-start-1 row-end-2">456</div>
-            <div class="col-start-1 col-end-2 row-start-1 row-end-2">
-              <img class="lg:hidden" src="/images/faq-accordian/bg-pattern-mobile.svg" alt="box shadow" />
-              <img class="hidden lg:block" src="/images/faq-accordian/bg-pattern-desktop.svg" alt="box shadow" />
-            </div>
-            <div class="col-start-1 col-end-2 row-start-1 row-end-2">
-              <img class="lg:hidden translate-y-[-6.8rem] " src="/images/faq-accordian/illustration-woman-online-mobile.svg"
-                alt="illustration of a woman standing in front of a screen" />
-              <img class="hidden lg:block" src="/images/faq-accordian/illustration-woman-online-desktop.svg"
-                alt="illustration of a woman standing in front of a screen" />
-            </div>
+    <div class="flex flex-col w-full max-w-sm mx-auto p-4 border border-gray-200 bg-white shadow">
+    <div class="flex flex-col mb-4">
+      <label for="name"
+           class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">
+        Name
+      </label>
+  
+      <div class="relative">
+  
+        <div class="absolute flex border border-transparent left-0 top-0 h-full w-10">
+          <div class="flex items-center justify-center rounded-tl rounded-bl z-10 bg-gray-100 text-gray-600 text-lg h-full w-full">
+            <svg viewBox="0 0 24 24"
+               width="24"
+               height="24"
+               stroke="currentColor"
+               stroke-width="2"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               class="h-5 w-5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12"
+                  cy="7"
+                  r="4"></circle>
+            </svg>
           </div>
-        </section>
-      </main>
+        </div>
+  
+        <input id="name"
+             name="name"
+             type="text"
+             placeholder="Name"
+             value=""
+             class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-12"/>
+  
+      </div>
     </div>
+    <div class="flex flex-col mb-4">
+      <label for="name"
+           class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">
+        Name
+      </label>
+  
+      <div class="relative">
+  
+        <div class="absolute flex border border-transparent left-0 top-0 h-full w-10">
+          <div class="flex items-center justify-center rounded-tl rounded-bl z-10 bg-gray-100 text-gray-600 text-lg h-full w-full">
+            <svg viewBox="0 0 24 24"
+               width="24"
+               height="24"
+               stroke="currentColor"
+               stroke-width="2"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               class="h-5 w-5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12"
+                  cy="7"
+                  r="4"></circle>
+            </svg>
+          </div>
+        </div>
+  
+        <input id="name"
+             name="name"
+             type="text"
+             placeholder="Name"
+             value=""
+             class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-12 border-red-500"/>
+  
+      </div>
+  
+      <span class="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+        Invalid username field !
+      </span>
+    </div>
+  </div>
   )
 }

@@ -11,10 +11,10 @@ export default function Home() {
         <main class="flex h-screen">
           <div class="flex flex-col m-auto text-center">
             <h3 class="text-slate-900 text-base font-medium">Design Challenges:</h3>
-            <div class="flex flex-col underline text-blue-600 hover:text-blue-800 mt-5 text-sm">
+            <div class="flex flex-col underline text-blue-600 mt-5">
               {
                 pages.map(page => {
-                  return <Link key={page} href={`/${page}`}>{page}</Link>
+                  return <div class="hover:text-blue-800 text-sm"><Link key={page} href={`/${page}`}>{page}</Link></div>
                 })
               } 
             </div>
