@@ -14,7 +14,7 @@ export default function Home() {
             <div class="flex flex-col underline text-blue-600 mt-5">
               {
                 pages.map(page => {
-                  return <div class="hover:text-blue-800 text-sm"><Link key={page} href={`/${page}`}>{page}</Link></div>
+                  return <div key={page} class="hover:text-blue-800 text-sm"><Link href={`/${page}`}>{page}</Link></div>
                 })
               } 
             </div>
