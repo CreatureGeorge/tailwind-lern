@@ -28,7 +28,6 @@ module.exports = {
         "very-dark-gray-blue": "hsl(237, 12%, 33%)",
         "very-dark-desat-blue": "hsl(238, 29%, 16%)",
 
-
         "soft-blue": "hsl(240, 73%, 65%)",
 
         "soft-dark-blue": "hsl(213, 20%, 22%)",
@@ -37,6 +36,12 @@ module.exports = {
 
         "light-gray": "hsl(217, 12%, 63%)",
         "med-gray": "hsl(216, 12%, 54%)",
+
+        "nft-soft-blue": "hsl(215, 51%, 70%)",
+        "nft-cyan": "hsl(178, 100%, 50%)",
+        "very-dark-blue-main": "hsl(217, 54%, 11%)",
+        "very-dark-blue-card": "hsl(216, 50%, 16%)",
+        "very-dark-blue-line": "hsl(215, 32%, 27%)",
 
 
       },
@@ -47,6 +52,11 @@ module.exports = {
         'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
         'overpass': ['Overpass']
       }
+    },
+  },
+  variants: {
+    extend: {
+      visibility: ["group-hover"],
     },
   },
   plugins: [],

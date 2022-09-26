@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import PageHead from '../components/layout/PageHead'
+
+const pages = [ 'qr-code', '3-column', 'faq-accordian', 'interactive-rating-component', 'nft-preview-card']
 
 export default function Home() {
   return (
@@ -11,18 +12,11 @@ export default function Home() {
           <div class="flex flex-col m-auto text-center">
             <h3 class="text-slate-900 text-base font-medium">Design Challenges:</h3>
             <div class="flex flex-col underline text-blue-600 hover:text-blue-800 mt-5 text-sm">
-              <Link href="/qr-code">
-                qr-code
-              </Link>
-              <Link href="/3-column">
-                3-columns
-              </Link>
-              <Link href="/faq-accordian">
-                faq-accordian
-              </Link>
-              <Link href="/interactive-rating-component">
-                interactive-rating-component
-              </Link>
+              {
+                pages.map(page => {
+                  return <Link key={page} href={`/${page}`}>{page}</Link>
+                })
+              } 
             </div>
           </div>
         </main>
